@@ -25,6 +25,7 @@ sd(selisih1)
 ```
 
 Hasil
+
 ![1a](https://user-images.githubusercontent.com/89601859/170873077-c101bde6-6b5a-488d-88b0-aae1dacc136f.png)
 
 
@@ -50,6 +51,7 @@ t_value1
 ```
 
 Hasil
+
 ![1b](https://user-images.githubusercontent.com/89601859/170873081-d6f94f83-62bc-4e24-a938-4cba60c8db8a.png)
 
 
@@ -62,6 +64,7 @@ t.test(datafield2, datafield1)
 ```
 
 Hasil
+
 ![1c](https://user-images.githubusercontent.com/89601859/170873082-d3f98a40-8626-4704-92cf-bc9cda5489c0.png)
 
 
@@ -84,6 +87,7 @@ tsum.test(mean.x = data2$mean, n.x = 100, sd(data2$sd), mu = data2$mean_hipo)
 ```
 
 Hasil
+
 ![2b](https://user-images.githubusercontent.com/89601859/170873085-5a75906e-3277-4d7c-ab1a-33c2ad533096.png)
 
 
@@ -105,6 +109,7 @@ pnorm(-abs(zScore))
 ```
 
 Hasil
+
 ![2c](https://user-images.githubusercontent.com/89601859/170873155-b6b5c44f-1add-4ecd-82a2-3f38b2eeb7e9.png)
 
 
@@ -136,6 +141,7 @@ tsum.test(
 ```
 
 Hasil
+
 ![3b](https://user-images.githubusercontent.com/89601859/170873150-b68ced31-99b9-439e-8905-4894ee1afafd.png)
 
 
@@ -147,6 +153,7 @@ qt(p = 0.05, df = 2, lower.tail = FALSE)
 ```
 
 Hasil
+
 ![3c](https://user-images.githubusercontent.com/89601859/170873153-ff0e5c3b-99a2-4ed3-9498-0b372c8b44a6.png)
 
 
@@ -177,6 +184,7 @@ hist(group3$Length, xlim = c(16, 20))
 ```
 
 Hasil
+
 ![4a_1](https://user-images.githubusercontent.com/89601859/170873203-41dd25e5-574c-4e91-bef0-65ecdd2dca15.png)
 
 ![4a_2](https://user-images.githubusercontent.com/89601859/170873205-aa85f36d-d7dc-45f0-88ca-37881244b0fa.png)
@@ -192,6 +200,7 @@ bartlett.test(data4$Length, data4$Group)
 ```
 
 Hasil
+
 ![4b](https://user-images.githubusercontent.com/89601859/170873295-9f791ad1-4c8e-43cc-8dac-d0a2278f927f.png)
 
 
@@ -203,6 +212,7 @@ model1 <- lm(data4$Length, data4$Group)
 ```
 
 Hasil
+
 ![4c](https://user-images.githubusercontent.com/89601859/170873277-503bca24-0f17-4405-a84d-787d2f82e08b.png)
 
 
@@ -218,6 +228,7 @@ TukeyHSD(av)
 ```
 
 Hasil
+
 ![4e](https://user-images.githubusercontent.com/89601859/170873279-d8969d95-068a-4063-be01-170f095ff9f7.png)
 
 
@@ -229,6 +240,7 @@ ggplot(data4, mapping = aes(x = Group, y = Length, group = 1)) +  geom_boxplot()
 ```
 
 Hasil
+
 ![4f](https://user-images.githubusercontent.com/89601859/170873282-db50de3f-ab9a-4358-a1ec-260bc5cce52e.png)
 
 
@@ -242,6 +254,7 @@ qplot(Temp, Light, data = data5) + facet_wrap(~Glass)
 ```
 
 Hasil
+
 ![5a](https://user-images.githubusercontent.com/89601859/170873285-1f737cd4-0587-4e5b-b24b-e3e44e275475.png)
 
 
@@ -252,7 +265,9 @@ av <- aov(Light ~ factor(Glass)*factor(Temp), data = data5)
 summary.aov(av)
 ```
 
+
 Hasil
+
 ![5b](https://user-images.githubusercontent.com/89601859/170873575-24ca1695-7f5f-4264-93a7-c7a747c026ce.png)
 
 
@@ -268,6 +283,7 @@ group_by(data5, Glass, Temp)%>%
 ```
 
 Hasil
+
 ![5c](https://user-images.githubusercontent.com/89601859/170873579-0c8e29cf-25c6-4d65-8d2b-edc4d8d52c69.png)
 
 
@@ -280,6 +296,7 @@ hsd
 ```
 
 Hasil
+
 ![5d](https://user-images.githubusercontent.com/89601859/170873583-9c11129d-6646-48a1-a8f4-4a9d9e7bafb8.png)
 
 
@@ -290,4 +307,5 @@ multcompLetters4(av, hsd)
 ```
 
 Hasil
+
 ![5e](https://user-images.githubusercontent.com/89601859/170873586-a21203ce-5f65-48e9-809c-086cbc567466.png)
