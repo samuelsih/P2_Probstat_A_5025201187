@@ -208,7 +208,8 @@ Hasil
 #### 4c
 Gunakan `lm()` dan masukkan ke variable `model1`
 ```
-model1 <- lm(data4$Length, data4$Group)
+model1 <- lm(data4$Length~data4$Group)
+summary(model1)
 ```
 
 Hasil
